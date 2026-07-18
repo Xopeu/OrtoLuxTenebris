@@ -4,7 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88ed1639-3db3-48dd-b4cd-73309295d9b0" name="Changes" comment="" />
+    <list default="true" id="88ed1639-3db3-48dd-b4cd-73309295d9b0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nav-back.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/reply-box.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/archive/echo-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/archive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/community.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/marketplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/prayer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/technical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-08.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-18.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-24.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-25.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-26.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-27.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-30.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/forum/thread-31.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/manifest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/administrator/administrator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/anna-02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/anna-03-replies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/anna-03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/anna-04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/anna_r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/messages/ilan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/anna_r/messages/keeper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/brother_ilan/brother_ilan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/brother_ilan/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/brother_ilan/messages/anna.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/brother_ilan/messages/kholloway.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/brother_ilan/messages/marguerite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/the_keeper/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/the_keeper/messages/anna.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/the_keeper/messages/mstrand.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/the_keeper/messages/vessel09.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/the_keeper/the_keeper.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +92,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Xopeu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Xopeu/OrtoLuxTenebris.git",
+    "accountId": "e31f9434-991a-4343-bcf6-6920fdd32e23"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -26,6 +117,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "/Users/w1li_/WebstormProjects/OrtoLuxTenebris",
     "node.js.detected.package.eslint": "true",
@@ -41,6 +133,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/audio" />
       <recent name="$PROJECT_DIR$/img/ui" />
@@ -60,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1784361690076</updated>
-      <workItem from="1784361691298" duration="2213000" />
+      <workItem from="1784361691298" duration="4452000" />
     </task>
     <servers />
   </component>
