@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordo Lux Tenebris — Not Found</title>
+  <!--
+    GitHub Pages отдаёт содержимое 404.html при любом несуществующем
+    пути, но адресная строка при этом остаётся на СЛОМАННОМ урле —
+    поэтому обычные относительные пути (img/..., css/...) тут ненадёжны:
+    браузер будет искать их не от корня репозитория, а от того глубокого
+    пути, где произошла ошибка. Из-за этого стили — прямо тут, инлайном,
+    а не через css/style.css.
+
+    Ссылка "на главную" — абсолютный путь с именем репозитория
+    "/Ordo-Lux-Tenebris/". Если переименуешь репозиторий на GitHub —
+    поменяй эту строку на новое имя.
+  -->
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1c2b3a;
+      font-family: "Times New Roman", Times, serif;
+      color: #ffffff;
+    }
+    .not-found-box {
+      max-width: 560px;
+      padding: 32px 36px;
+      background-color: rgba(10, 6, 30, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      text-align: center;
+    }
+    .not-found-box p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .not-found-box a {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
+      color: #9c8bc9;
+      text-decoration: underline dotted;
+    }
+    .not-found-box a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="not-found-box">
+    <p>This page does not exist. Or it existed once and does not anymore. Or it exists somewhere you have not found yet.</p>
+    <a href="/Ordo-Lux-Tenebris/index.html">Return to the home page</a>
+  </div>
+
+</body>
+</html>

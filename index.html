@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordo Lux Tenebris</title>
+  <!-- ЗАГЛУШКА: положи свою иконку сюда под этим именем
+       (можно .ico или .png — просто поменяй расширение ниже) -->
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Лёгкая CRT-текстура поверх всего (сканлайны + виньетка).
+       Чисто декоративно, не мешает кликам. -->
+
+  <!-- ============ HEADER / ЛОГО ============ -->
+  <header class="site-header">
+    <img src="img/logo-tenebris.gif" alt="Ordo Lux Tenebris" class="site-logo">
+  </header>
+
+  <!-- ============ ОБЁРТКА: САЙДБАР + КОНТЕНТ ============ -->
+  <div class="page-wrap">
+
+    <!-- ============ НАВИГАЦИЯ ============ -->
+    <nav class="sidebar">
+      <h2 class="sidebar-title">NAVIGATION</h2>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="link-gold">Home</a></li>
+        <li><a href="pages/manifest.html" class="link-gold">Manifesto</a></li>
+        <li><a href="pages/faq.html" class="link-green">FAQ</a></li>
+        <li><a href="pages/contacts.html" class="link-gold">Contacts</a></li>
+        <li><a href="pages/about.html" class="link-green">About</a></li>
+        <li><a href="pages/forum.html" class="link-green">Forum</a></li>
+        <li><a href="pages/login.html" class="link-green">Login</a></li>
+      </ul>
+
+      <button class="sound-toggle" type="button" id="sound-toggle">
+        <img src="img/ui/icon-speaker.png" alt="" class="sound-icon">
+        <span id="sound-toggle-label">Sound Off</span>
+      </button>
+      <audio id="bg-audio" src="audio/melody.mp3" loop preload="auto"></audio>
+
+      <hr class="sidebar-divider">
+
+      <!-- Бегущая строка снизу вверх, как старый marquee.
+           Каждая цитата — реальная ссылка, поэтому у "прочитанных"
+           цвет меняется сам (стандартный :visited браузера).
+           Список продублирован ниже для бесшовной прокрутки —
+           не убирать вторую копию. -->
+      <div class="quotes-viewport">
+        <ul class="glitch-quotes">
+          <li><a href="pages/archive/echo-01.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+          <li><a href="pages/archive/echo-02.html">Placeholder quote number two goes here.</a></li>
+          <li><a href="pages/archive/echo-03.html">Sed do eiusmod tempor incididunt ut labore.</a></li>
+          <li><a href="pages/archive/echo-04.html">Ut enim ad minim veniam, quis nostrud.</a></li>
+          <li><a href="pages/archive/echo-05.html">Faith is a lamp we carry, not a fire we chase.</a></li>
+          <li><a href="pages/archive/echo-06.html">Excepteur sint occaecat cupidatat non.</a></li>
+          <li><a href="pages/archive/echo-07.html">Placeholder text placeholder text here.</a></li>
+          <li><a href="pages/archive/echo-08.html">Another quote will replace this line.</a></li>
+          <li><a href="pages/archive/echo-09.html">Sunt in culpa qui officia deserunt mollit.</a></li>
+          <li><a href="pages/archive/echo-10.html">Placeholder phrase awaiting final lore.</a></li>
+        </ul>
+        <ul class="glitch-quotes" aria-hidden="true">
+          <li><a href="pages/archive/echo-01.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+          <li><a href="pages/archive/echo-02.html">Placeholder quote number two goes here.</a></li>
+          <li><a href="pages/archive/echo-03.html">Sed do eiusmod tempor incididunt ut labore.</a></li>
+          <li><a href="pages/archive/echo-04.html">Ut enim ad minim veniam, quis nostrud.</a></li>
+          <li><a href="pages/archive/echo-05.html">Faith is a lamp we carry, not a fire we chase.</a></li>
+          <li><a href="pages/archive/echo-06.html">Excepteur sint occaecat cupidatat non.</a></li>
+          <li><a href="pages/archive/echo-07.html">Placeholder text placeholder text here.</a></li>
+          <li><a href="pages/archive/echo-08.html">Another quote will replace this line.</a></li>
+          <li><a href="pages/archive/echo-09.html">Sunt in culpa qui officia deserunt mollit.</a></li>
+          <li><a href="pages/archive/echo-10.html">Placeholder phrase awaiting final lore.</a></li>
+        </ul>
+      </div>
+
+      <div class="visitor-counter">
+        <span class="counter-label">visitors:</span>
+        <span class="counter-digits" id="visitor-count">1</span>
+      </div>
+    </nav>
+
+    <!-- ============ ОСНОВНОЙ КОНТЕНТ ============ -->
+    <main class="content">
+      <p>
+        In the stillness of the northern forests, where the wind carries whispers of time itself,
+        the Light speaks. It does not shout; it flows quietly through the spaces between branches,
+        the snow, and the hidden streams. Those who listen feel it, not as sound, but as recognition.
+        The True Light cannot be captured by eyes alone; it enters the mind, touches the pulse,
+        and bends the world to the rhythm of its understanding.
+      </p>
+
+      <p>
+        We are called to awaken to what has always existed. The world is layered in veils:
+        the obvious, the hidden, the forgotten, and the forbidden. Through observation and practice,
+        through devotion to the unseen laws, the faithful align themselves with the currents of
+        creation. Light is not merely illumination — it is comprehension, alignment, and resonance.
+      </p>
+
+      <p>
+        In our gatherings, we speak in symbols and echoes. Each phrase, each silence, is an
+        instruction for those attuned. Words are vessels, carrying meaning through thought and
+        feeling. The disciples learn to sense the vibrations of the Light, to differentiate the
+        subtle shifts that indicate its favor. To the uninitiated, it seems abstract; to the
+        awakened, it is the path itself.
+      </p>
+
+      <p>
+        Time is not linear. In the perception of the True Light, past, present, and potential
+        converge. Our studies reveal the cycles within cycles, the repetitions of existence that
+        govern matter, mind, and spirit. The faithful meditate upon these patterns, seeing the
+        reflection of the divine in the smallest details: a falling leaf, a distant star,
+        the ripple of water. All is connected; all is signal.
+      </p>
+
+      <p>
+        The Eternal Path requires patience and consistency. Daily rituals, simple but precise,
+        attune the spirit to the frequencies of the Light. Meals are taken with awareness, breath
+        is observed, gestures are performed with mindfulness. In these practices, the disciple
+        learns to dissolve separation, to feel the harmony between self and cosmos. This is the
+        discipline of alignment.
+      </p>
+
+      <p>
+        Guidance comes not from grandiose pronouncements but from subtlety. A movement of a hand,
+        a pause in speech, the tone of a melody — all are carriers of instruction. The Light
+        communicates through nuance. To misunderstand is to stagnate; to perceive is to advance.
+      </p>
+
+      <img src="img/jesus1.gif" alt="" class="content-image">
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    Last updated: October 1993 &middot; Best viewed at 800&times;600 &middot; Ordo Lux Tenebris &copy; 1993
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/counter.js"></script>
+</body>
+</html>
