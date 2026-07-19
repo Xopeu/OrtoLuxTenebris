@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordo Lux Tenebris — Login</title>
+  <link rel="icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="../img/logo-tenebris.gif" alt="Ordo Lux Tenebris" class="site-logo">
+  </header>
+
+  <div class="page-wrap">
+
+    <nav class="sidebar">
+      <h2 class="sidebar-title">NAVIGATION</h2>
+
+      <ul class="nav-links">
+        <li><a href="../index.html" class="link-gold">Home</a></li>
+        <li><a href="manifest.html" class="link-gold">Manifesto</a></li>
+        <li><a href="faq.html" class="link-green">FAQ</a></li>
+        <li><a href="contacts.html" class="link-gold">Contacts</a></li>
+        <li><a href="about.html" class="link-green">About</a></li>
+        <li><a href="forum.html" class="link-green">Forum</a></li>
+        <li><a href="login.html" class="link-green">Login</a></li>
+      </ul>
+
+      <button class="sound-toggle" type="button" id="sound-toggle">
+        <img src="../img/ui/icon-speaker.png" alt="" class="sound-icon">
+        <span id="sound-toggle-label">Sound Off</span>
+      </button>
+      <audio id="bg-audio" src="../audio/melody.mp3" loop preload="auto"></audio>
+
+      <hr class="sidebar-divider">
+
+      <div class="quotes-viewport">
+        <ul class="glitch-quotes">
+          <li><a href="archive/echo-01.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+          <li><a href="archive/echo-02.html">Placeholder quote number two goes here.</a></li>
+          <li><a href="archive/echo-03.html">Sed do eiusmod tempor incididunt ut labore.</a></li>
+          <li><a href="archive/echo-04.html">Ut enim ad minim veniam, quis nostrud.</a></li>
+          <li><a href="archive/echo-05.html">Faith is a lamp we carry, not a fire we chase.</a></li>
+          <li><a href="archive/echo-06.html">Excepteur sint occaecat cupidatat non.</a></li>
+          <li><a href="archive/echo-07.html">Placeholder text placeholder text here.</a></li>
+          <li><a href="archive/echo-08.html">Another quote will replace this line.</a></li>
+          <li><a href="archive/echo-09.html">Sunt in culpa qui officia deserunt mollit.</a></li>
+          <li><a href="archive/echo-10.html">Placeholder phrase awaiting final lore.</a></li>
+        </ul>
+        <ul class="glitch-quotes" aria-hidden="true">
+          <li><a href="archive/echo-01.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+          <li><a href="archive/echo-02.html">Placeholder quote number two goes here.</a></li>
+          <li><a href="archive/echo-03.html">Sed do eiusmod tempor incididunt ut labore.</a></li>
+          <li><a href="archive/echo-04.html">Ut enim ad minim veniam, quis nostrud.</a></li>
+          <li><a href="archive/echo-05.html">Faith is a lamp we carry, not a fire we chase.</a></li>
+          <li><a href="archive/echo-06.html">Excepteur sint occaecat cupidatat non.</a></li>
+          <li><a href="archive/echo-07.html">Placeholder text placeholder text here.</a></li>
+          <li><a href="archive/echo-08.html">Another quote will replace this line.</a></li>
+          <li><a href="archive/echo-09.html">Sunt in culpa qui officia deserunt mollit.</a></li>
+          <li><a href="archive/echo-10.html">Placeholder phrase awaiting final lore.</a></li>
+        </ul>
+      </div>
+
+      <div class="visitor-counter">
+        <span class="counter-label">visitors:</span>
+        <span class="counter-digits" id="visitor-count">1</span>
+      </div>
+    </nav>
+
+    <main class="content">
+      <h1 class="doc-title" style="text-align:left;">Member Login</h1>
+
+      <div id="logged-in-view" style="display:none;">
+        <p style="font-family: var(--font-mono); font-size: 14px; color: rgba(255,255,255,0.75); margin-bottom: 14px;">
+          Logged in as <span id="logged-in-username">—</span>.
+        </p>
+        <button type="button" id="logout-button" class="auth-form-standalone-button"
+          style="background:none; border:1px solid #6cf542; color:#fff; font-family: var(--font-mono); font-size:15px; padding:8px 16px; cursor:pointer;">
+          Log Out
+        </button>
+      </div>
+
+      <div id="logged-out-view">
+        <section class="auth-section">
+          <form class="auth-form" id="login-form">
+            <label for="login-username">Username</label>
+            <input type="text" id="login-username" autocomplete="username">
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" autocomplete="current-password">
+
+            <button type="submit">Log In</button>
+          </form>
+          <p class="auth-message" id="login-message"></p>
+        </section>
+      </div>
+
+      <h2 class="doc-title" style="text-align:left; font-size:20px;">New here?</h2>
+      <section class="auth-section">
+        <form class="auth-form" id="signup-form">
+          <label for="signup-username">Choose a username</label>
+          <input type="text" id="signup-username" autocomplete="off">
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" autocomplete="off">
+
+          <label for="signup-password">Choose a password</label>
+          <input type="password" id="signup-password" autocomplete="new-password">
+
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="auth-message" id="signup-message"></p>
+      </section>
+
+      <h2 class="doc-title" style="text-align:left; font-size:20px;">Forgot your password?</h2>
+      <section class="auth-section">
+        <form class="auth-form" id="forgot-form">
+          <label for="forgot-username">Username</label>
+          <input type="text" id="forgot-username" autocomplete="off">
+
+          <button type="submit">Get Hint</button>
+        </form>
+        <p class="auth-message" id="forgot-message"></p>
+      </section>
+    </main>
+
+  </div>
+
+  <footer class="site-footer">
+    Last updated: October 1993 &middot; Best viewed at 800&times;600 &middot; Ordo Lux Tenebris &copy; 1993
+  </footer>
+
+  <script src="../js/site.js"></script>
+  <script src="../js/counter.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>
