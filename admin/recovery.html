@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OLT — Administrator Recovery</title>
+  <link rel="stylesheet" href="../css/console.css">
+  <style>
+    #recovery-box {
+      max-width: 520px;
+      margin: 60px auto;
+    }
+    #recovery-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 20px;
+      max-width: 360px;
+    }
+    #recovery-box label {
+      color: #7fffb0;
+    }
+    #recovery-box input {
+      background: #001100;
+      border: 1px solid #1f8f1f;
+      color: #33ff33;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
+      padding: 8px 10px;
+    }
+    #recovery-box button {
+      background: none;
+      border: 1px solid #33ff33;
+      color: #33ff33;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
+      padding: 8px 16px;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    #recovery-box button:hover {
+      background: rgba(51, 255, 51, 0.1);
+    }
+    #recovery-message {
+      margin-top: 14px;
+      min-height: 1.4em;
+    }
+    .step {
+      display: none;
+    }
+    .step.is-active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="recovery-box">
+    <div class="line">OLT ADMINISTRATOR RECOVERY</div>
+    <div class="line dim">----------------------------------------</div>
+    <div class="line">&nbsp;</div>
+
+    <div id="step-key" class="step is-active">
+      <div class="line">Enter the Recovery Key found in the diagnostic log:</div>
+      <form id="key-form">
+        <label for="recovery-key">Recovery Key</label>
+        <input type="text" id="recovery-key" autocomplete="off">
+        <button type="submit">Verify</button>
+      </form>
+    </div>
+
+    <div id="step-password" class="step">
+      <div class="line">Key accepted. Set a new administrator password:</div>
+      <form id="password-form">
+        <label for="new-password">New password</label>
+        <input type="password" id="new-password" autocomplete="new-password">
+        <label for="confirm-password">Confirm password</label>
+        <input type="password" id="confirm-password" autocomplete="new-password">
+        <button type="submit">Set Password</button>
+      </form>
+    </div>
+
+    <div id="step-done" class="step">
+      <div class="line">Administrator password has been updated.</div>
+      <div class="line">&nbsp;</div>
+      <div class="line"><a href="../pages/login.html">Proceed to login</a></div>
+    </div>
+
+    <p id="recovery-message" class="line"></p>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script>
+    (function () {
+      var stepKey = document.getElementById('step-key');
+      var stepPassword = document.getElementById('step-password');
+      var stepDone = document.getElementById('step-done');
+      var message = document.getElementById('recovery-message');
+
+      function showStep(el) {
+        [stepKey, stepPassword, stepDone].forEach(function (s) {
+          s.classList.remove('is-active');
+        });
+        el.classList.add('is-active');
+      }
+
+      function setMessage(text, isError) {
+        message.textContent = text;
+        message.style.color = isError ? '#ff5555' : '#7fffb0';
+      }
+
+      document.getElementById('key-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var key = document.getElementById('recovery-key').value;
+        if (window.TenebrisAuth && window.TenebrisAuth.checkRecoveryKey(key)) {
+          setMessage('', false);
+          showStep(stepPassword);
+        } else {
+          setMessage('Invalid recovery key.', true);
+        }
+      });
+
+      document.getElementById('password-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var pw = document.getElementById('new-password').value;
+        var confirm = document.getElementById('confirm-password').value;
+
+        if (pw.length < 4) {
+          setMessage('Password must be at least 4 characters.', true);
+          return;
+        }
+        if (pw !== confirm) {
+          setMessage('Passwords do not match.', true);
+          return;
+        }
+
+        if (window.TenebrisAuth) {
+          window.TenebrisAuth.setAdminPassword(pw);
+        }
+        setMessage('', false);
+        showStep(stepDone);
+      });
+    })();
+  </script>
+</body>
+</html>

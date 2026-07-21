@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordo Lux Tenebris — Member Profile</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body data-account="anna_r">
+
+  <div class="archive-wrap">
+    <img src="../../../img/logo-tenebris.gif" alt="Ordo Lux Tenebris" class="archive-logo">
+
+    <article class="archive-post">
+      <p class="post-meta">Member profile &middot; <span>ANNA_R</span></p>
+
+      <dl>
+        <div class="profile-row">
+          <dt>Member since</dt>
+          <dd>1993-06-14</dd>
+        </div>
+        <div class="profile-row">
+          <dt>Posts</dt>
+          <dd>3</dd>
+        </div>
+        <div class="profile-row">
+          <dt>Last seen</dt>
+          <dd id="last-seen-value">1993-12-10</dd>
+        </div>
+        <div class="profile-row">
+          <dt>Status</dt>
+          <dd>account open</dd>
+        </div>
+      </dl>
+
+      <div class="post-body">
+        <p>No additional biography on file.</p>
+      </div>
+
+      <p class="post-footer">Posts by this member:</p>
+      <p class="post-footer"><a href="anna-02.html" class="profile-link">1993-08-02 — untitled</a></p>
+      <p class="post-footer"><a href="anna-03.html" class="profile-link">1993-11-04 — untitled</a></p>
+      <p class="post-footer"><a href="anna-04.html" class="profile-link">1994-03-01 — untitled</a></p>
+
+      <!-- ЗАГЛУШКА НА БУДУЩЕЕ: "Last seen" теперь стоит 1993-12-10 —
+           та же дата, что и почти у всех остальных на сайте (дата
+           "инцидента"). Но её пост anna-04.html датирован 1994-03-01,
+           через три месяца ПОСЛЕ этой даты — то есть по формальным
+           данным аккаунт "перестал существовать" вместе со всеми,
+           но продолжил постить. Пусть игрок сам заметит эту
+           нестыковку, сопоставив "Last seen" с датой её последнего
+           поста в списке ниже. Ничего не объяснять прямым текстом.
+
+           "Last seen" также перезаписывается на реальную дату,
+           когда ИГРОК логинится под этим аккаунтом (см. auth.js) —
+           и эта запись остаётся даже после разлогина или входа
+           под другим логином. -->
+
+      <div id="messages-locked" class="profile-locked">
+        [ private messages: access restricted ]
+      </div>
+
+      <div id="private-messages" style="display:none; margin-top:20px;">
+        <p class="post-footer"><a href="messages.html" class="profile-link">View private messages &rarr;</a></p>
+      </div>
+    </article>
+
+    <a href="../../../index.html" class="back-link">&larr; return</a>
+  </div>
+  <script src="../../../js/nav-back.js"></script>
+  <script src="../../../js/auth.js"></script>
+</body>
+</html>
